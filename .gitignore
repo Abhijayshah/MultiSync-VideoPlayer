@@ -3,7 +3,7 @@ INTERVIEW_PREP.md
 interview-notes.md
 private-notes.md
 
-# OS generated files
+# OS generated files  
 .DS_Store
 .DS_Store?
 ._*
@@ -36,4 +36,4 @@ node_modules/
 .env.local
 .env.development.local
 .env.test.local
-.env.production.local 
+.env.production.local
