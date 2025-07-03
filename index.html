@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Multi-Video Player - MacBook M1</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎬 Advanced Multi-Video Player</h1>
+            <p>Multiple videos, 10x speed, and advanced controls for Windows & macOS</p>
+            <div class="platform-info" id="platformInfo">
+                <span id="platformText">🌐 Works on Windows & macOS • All modern browsers supported</span>
+            </div>
+            <div class="user-interaction-notice" id="userInteractionNotice">
+                <span>📌 Click anywhere to enable simultaneous video playback</span>
+            </div>
+        </header>
+
+        <div class="player-management">
+            <div class="management-controls">
+                <button id="addPlayerBtn" class="add-player-btn">➕ Add New Video Player</button>
+                <button id="addMoreVideosBtn" class="add-videos-btn">📁 Add More Videos to Playlist</button>
+                <button id="syncAllBtn" class="sync-btn">🔄 Sync All Players</button>
+                <button id="pauseAllBtn" class="pause-all-btn">⏸️ Pause All</button>
+                <button id="playAllBtn" class="play-all-btn">▶️ Play All</button>
+            </div>
+            <div class="player-counter">
+                <span id="playerCount">Active Players: 1</span>
+            </div>
+        </div>
+
+        <div id="videoPlayersContainer" class="video-players-container">
+            <!-- First player will be created here -->
+        </div>
+
+        <div class="global-controls">
+            <div class="control-group">
+                <h3>🌐 Global Speed Controls</h3>
+                <div class="global-speed-controls">
+                    <button class="global-speed-btn" data-speed="0.25">0.25x</button>
+                    <button class="global-speed-btn" data-speed="0.5">0.5x</button>
+                    <button class="global-speed-btn" data-speed="0.75">0.75x</button>
+                    <button class="global-speed-btn active" data-speed="1">1x</button>
+                    <button class="global-speed-btn" data-speed="1.25">1.25x</button>
+                    <button class="global-speed-btn" data-speed="1.5">1.5x</button>
+                    <button class="global-speed-btn" data-speed="2">2x</button>
+                    <button class="global-speed-btn" data-speed="2.5">2.5x</button>
+                    <button class="global-speed-btn" data-speed="3">3x</button>
+                    <button class="global-speed-btn" data-speed="4">4x</button>
+                    <button class="global-speed-btn" data-speed="5">5x</button>
+                    <button class="global-speed-btn" data-speed="6">6x</button>
+                    <button class="global-speed-btn" data-speed="7">7x</button>
+                    <button class="global-speed-btn" data-speed="8">8x</button>
+                    <button class="global-speed-btn" data-speed="10">10x</button>
+                </div>
+                <div class="global-custom-speed">
+                    <input type="range" id="globalSpeedSlider" min="0.25" max="10" step="0.25" value="1">
+                    <span id="globalSpeedValue">1.0x</span>
+                    <button id="applyGlobalSpeedBtn">Apply to All</button>
+                </div>
+            </div>
+
+            <div class="control-group">
+                <h3>📊 Master Playlist</h3>
+                <div class="master-playlist" id="masterPlaylist"></div>
+                <div class="playlist-actions">
+                    <button id="shuffleAllBtn">🔀 Shuffle All</button>
+                    <button id="clearAllBtn">🗑️ Clear All</button>
+                    <button id="exportPlaylistBtn">💾 Export Playlist</button>
+                    <button id="importPlaylistBtn">📂 Import Playlist</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="keyboard-shortcuts">
+            <h3>⌨️ Keyboard Shortcuts</h3>
+            <div class="shortcuts-grid">
+                <span><kbd>Space</kbd> Play/Pause Active Player</span>
+                <span><kbd>→</kbd> +10 seconds (Active)</span>
+                <span><kbd>←</kbd> -10 seconds (Active)</span>
+                <span><kbd>↑</kbd> Speed up (Active)</span>
+                <span><kbd>↓</kbd> Speed down (Active)</span>
+                <span><kbd>Ctrl</kbd>+<kbd>A</kbd> Play/Pause All</span>
+                <span><kbd>Ctrl</kbd>+<kbd>→</kbd> +10s All Players</span>
+                <span><kbd>Ctrl</kbd>+<kbd>←</kbd> -10s All Players</span>
+                <span><kbd>Ctrl</kbd>+<kbd>↑</kbd> Speed up All</span>
+                <span><kbd>Ctrl</kbd>+<kbd>↓</kbd> Speed down All</span>
+                <span><kbd>Ctrl</kbd>+<kbd>N</kbd> Add New Player</span>
+                <span><kbd>F</kbd> Fullscreen (Active)</span>
+                <span><kbd>M</kbd> Mute/Unmute (Active)</span>
+                <span><kbd>1-9</kbd> Switch to Player 1-9</span>
+                <span><kbd>Delete</kbd> Remove Active Player</span>
+            </div>
+        </div>
+
+        <div class="performance-info" id="performanceInfo">
+            <h3>📈 Performance Monitor</h3>
+            <div class="performance-stats">
+                <span>Total Players: <span id="totalPlayers">1</span></span>
+                <span>Active Videos: <span id="activeVideos">0</span></span>
+                <span>Memory Usage: <span id="memoryUsage">--</span></span>
+                <span>CPU Load: <span id="cpuLoad">--</span></span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
