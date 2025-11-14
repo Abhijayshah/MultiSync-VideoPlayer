@@ -2,6 +2,11 @@
 
 A revolutionary video player system that allows you to **play multiple videos simultaneously** at speeds up to **10x**, with advanced playlist management and intelligent file corruption detection. **Cross-platform compatible** - works perfectly on both Windows and macOS systems.
 
+
+![image4](./assets/image4.png)
+![image3](./assets/image3.png)
+![image2](./assets/image2.png)
+![image1](./assets/image1.png)
 ## ✨ New Enhanced Features
 
 ### 🚀 **Multi-Player Capabilities**
