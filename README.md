@@ -1,5 +1,9 @@
 # 🎬 Advanced Multi-Video Player for Windows & macOS
 
+## Live site Free Access : https://abhijayshah.github.io/MultiSync-VideoPlayer/ 
+
+## Demo Youtube video Video Here : https://www.youtube.com/watch?v=eB6_jI5ONHA 
+
 A revolutionary video player system that allows you to **play multiple videos simultaneously** at speeds up to **10x**, with advanced playlist management and intelligent file corruption detection. **Cross-platform compatible** - works perfectly on both Windows and macOS systems.
 
 
